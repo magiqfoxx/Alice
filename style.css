@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alegreya";
+  font-family: "Amatic SC";
+  font-family: "Dawning of a New Day";
+  font-family: "Life Savers";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  color: white;
+}
+.section-1 {
+  height: 100vh;
+  background-color: black;
+  background-image: url(img/newbck.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.section-1 h3 {
+  /*width: calc(100% - 40rem);*/
+  /*margin: 1rem 8rem;*/
+  /*line-height: 12rem;*/
+  font-family: "Amatic SC";
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  height: 80vh;
+}
+.section-1 .h3-1 {
+  /*margin: 4rem -40rem;*/
+}
+.section-2 {
+  height: 100vh;
+  background-color: #110019;
+  background-image: url(img/section-23.png);
+  background-repeat: no-repeat;
+  background-position: 3vw 25vh;
+  position: relative;
+}
+.section-2 h3 {
+  position: absolute;
+}
+.section-2 .h3-1 {
+  top: 10vh;
+  left: 10vw;
+}
+.section-2 .h3-2 {
+  /* MYSELF */
+  top: 14vh;
+  left: 30vw;
+  color: black;
+  font-family: "Dawning of a New Day";
+  padding: 0px 5rem;
+  background-image: url(img/sign.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11rem;
+  background-position-y: 1rem;
+}
+.section-2 .h3-2 span {
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+.section-2 .h3-2 span:hover {
+  color: transparent;
+}
+.section-2 .h3-3 {
+  top: 21vh;
+  left: 64vw;
+}
+.section-2 img {
+  max-width: 40vw;
+  position: absolute;
+}
+.section-2 #img--sign {
+  top: 15vh;
+  left: 30vw;
+}
+#img--sign:hover {
+  transform: rotateY(180deg);
+  transition: all 3s ease-in-out;
+}
+.section-2 #img--tray {
+  top: 60vh;
+  left: 20vw;
+}
+
+.section-3 {
+  height: 100vh;
+  background-color: #011a11;
+  background-image: url(img/section-3.svg);
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  background-origin: no;
+  background-position: 2vw 5vh;
+}
+.section-3 h3 {
+  margin: 2rem;
+}
+.section-3 h3 span {
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+.section-3 h3 span:hover {
+  color: rgb(224, 203, 10);
+}
+.section-3 img {
+  max-width: 30vw;
+  float: right;
+  margin: 3rem;
+}
+
+.section-4 {
+  height: 100vh;
+  background-color: #01041a;
+  background-image: url(img/section-4.jpg);
+  background-size: 50vw;
+  background-position: left;
+  background-repeat: repeat-y;
+  position: relative;
+}
+.section-4 h3 {
+  display: block;
+  clear: both;
+  text-align: right;
+  width: calc(100% - 40rem);
+  margin: 12rem 5rem;
+  float: right;
+}
+.section-4 .watch {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.section-4 .motif {
+  position: absolute;
+  left: 2rem;
+  bottom: 0px;
+  display: none;
+}
+.section-4 img.hat {
+  width: 30vw;
+  position: absolute;
+  top: 35vh;
+  left: 10vw;
+}
+h3 {
+  display: inline-block;
+
+  font-size: 60px;
+}
