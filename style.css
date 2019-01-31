@@ -27,7 +27,7 @@ body {
   /*line-height: 12rem;*/
   font-family: "Amatic SC";
   writing-mode: vertical-rl;
-  text-orientation: upright;
+  /*text-orientation: upright;*/
   height: 80vh;
 }
 .section-1 .h3-1 {
@@ -44,49 +44,95 @@ body {
 .section-2 h3 {
   position: absolute;
 }
+.section-2 .swirl {
+  background-image: url(img/section-2.png);
+  width: 35px;
+  height: 87px;
+}
+.section-2 .swirl:hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 20s ease;
+  /*add js to make the one pic stay*/
+}
 .section-2 .h3-1 {
   top: 10vh;
-  left: 10vw;
+  left: 27vw;
 }
 .section-2 .h3-2 {
+  position: absolute;
   /* MYSELF */
-  top: 14vh;
-  left: 30vw;
+  top: 20vh;
+  right: 20vw;
   color: black;
   font-family: "Dawning of a New Day";
   padding: 0px 5rem;
-  background-image: url(img/sign.png);
+  z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
   height: 11rem;
   background-position-y: 1rem;
 }
-.section-2 .h3-2 span {
+.section-2 #img--sign span {
   -webkit-transition: color 2s;
   transition: color 2s;
 }
-.section-2 .h3-2 span:hover {
+.section-2 #img--sign span:hover {
   color: transparent;
 }
 .section-2 .h3-3 {
-  top: 21vh;
-  left: 64vw;
+  top: 40vh;
+  right: 2vw;
 }
-.section-2 img {
-  max-width: 40vw;
-  position: absolute;
-}
+
 .section-2 #img--sign {
-  top: 15vh;
-  left: 30vw;
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
+  color: black;
+  padding: 0px 4rem;
+  background-image: url(img/sign.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19rem;
+  height: 11rem;
+  background-position-y: 1rem;
+  font-family: "Dawning of a New Day";
+  font-size: 3rem;
+  padding: 1rem 6rem;
 }
-#img--sign:hover {
-  transform: rotateY(180deg);
-  transition: all 3s ease-in-out;
+#img--sign:active {
+  animation: sign__rotate 2s ease;
+}
+@keyframes sign__rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.section-2 .img--tray {
+  top: 43vh;
+  left: 5vw;
+  position: absolute;
+  width: 100%;
+  height: 56vw;
+}
+.section-2 .img--tray:hover {
+  transform: translateX(36rem);
+  transition: all 2s ease;
+  /*play a clink noise at the end*/
+  /*add js to make the animations stay*/
 }
 .section-2 #img--tray {
-  top: 60vh;
-  left: 20vw;
+  position: absolute;
+  left: -36rem;
+  width: 56vw;
 }
 
 .section-3 {
@@ -117,24 +163,44 @@ body {
 .section-4 {
   height: 100vh;
   background-color: #01041a;
-  background-image: url(img/section-4.jpg);
+
   background-size: 50vw;
   background-position: left;
   background-repeat: repeat-y;
   position: relative;
+  font-family: "Dawning of a New Day";
+}
+.section-4 .left-side {
+  background-image: url(img/section-4.jpg);
+  height: 100vh;
+  width: 50vw;
+  z-index: 1;
 }
 .section-4 h3 {
   display: block;
-  clear: both;
+  position: absolute;
   text-align: right;
   width: calc(100% - 40rem);
-  margin: 12rem 5rem;
-  float: right;
+  right: 4vw;
+  top: 4vh;
+}
+.section-4 .fade-in {
+  top: 17vh;
+  width: 1rem;
+  overflow: hidden;
+}
+.section-4 .fade-in:hover {
+  width: 12rem;
+  transition: 4s ease-out;
 }
 .section-4 .watch {
   position: absolute;
   bottom: 0px;
   right: 0px;
+}
+.section-4 .watch:hover {
+  transform: rotateZ(360deg);
+  transition: 4s ease-out;
 }
 .section-4 .motif {
   position: absolute;
@@ -147,6 +213,21 @@ body {
   position: absolute;
   top: 35vh;
   left: 10vw;
+  z-index: 3;
+  cursor: pointer;
+}
+.section-4 img.hat:active {
+  transform: translateY(-30vh);
+  transition-delay: 1s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+}
+.section-4 img.bunny {
+  width: 20vw;
+  position: absolute;
+  top: 37vh;
+  left: 16vw;
+  z-index: 1;
 }
 h3 {
   display: inline-block;
